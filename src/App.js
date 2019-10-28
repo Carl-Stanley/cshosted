@@ -16,7 +16,7 @@ function App() {
 			<PrivateRoute path='/eventslist' component={EventsList} />
 			<PrivateRoute path='/eventstasks' component={EventsTasks} /> 
 			<Route path="/register" component={SignupForm} />
-			<Route path="/login" component={Login}  />
+			<Route exact path="/login" component={Login}  />
 		</div>
 	);
 }
