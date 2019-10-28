@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 
 function TheHeader() {
 
@@ -33,8 +33,8 @@ function TheHeader() {
                    <a href='https://corpeventplanner.netlify.com/'>Home</a>                   
                    <a href='https://corpeventplanner.netlify.com/about-page.html'>About Us</a>
                    <a href='#'>Contact Us</a>
-                   <a href='/register'>Sign up</a>
-                   <a href='/login'>Log in</a>
+                   <Link to ={'/register'}>Sign up</Link>
+                   <Link to ={'/login'}>log in</Link>
                </div>
 
            </header>
