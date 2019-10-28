@@ -12,10 +12,9 @@ function App() {
 		<div className="App">
 
 			<TheHeader />
-			{/* <PrivateRoute path='/eventslist' component={EventsList} />
-			<PrivateRoute path='/eventstasks' component={EventsTasks} /> */}
-			<Route path='/eventslist' component={EventsList} />
-			<Route path='/eventstasks' component={EventsTasks} />
+			
+			<PrivateRoute path='/eventslist' component={EventsList} />
+			<PrivateRoute path='/eventstasks' component={EventsTasks} /> 
 			<Route path="/register" component={SignupForm} />
 			<Route path="/login" component={Login}  />
 		</div>
