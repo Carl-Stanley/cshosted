@@ -42,13 +42,13 @@ class EventsList extends Component {
     newEventModal: false,
     editEventModal: false
   }
-  componentWillMount() {
-    this._refreshEvents();
-  }
-
-  //componentDidMount() {
+ // componentWillMount() {
    // this._refreshEvents();
  // }
+
+  componentDidMount() {
+    this._refreshEvents();
+  }
   toggleNewEventModal() {
     this.setState({
       newEventModal: ! this.state.newEventModal

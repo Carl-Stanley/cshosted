@@ -28,7 +28,7 @@ class EventsTasks extends Component {
     newTaskModal: false,
     editTaskModal: false
   }
-  componentWillMount() {
+  componentDidMount() {
     this._refreshTasks();
   }
   toggleNewTaskModal() {
