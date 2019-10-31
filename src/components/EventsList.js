@@ -89,7 +89,7 @@ class EventsList extends Component {
     event_title,event_description,image_url,event_date,event_time,attendees,budget,user_id,completed
     })
     .then((response) => {
-      //this._refreshEvents();
+      this._refreshEvents();
 
       this.setState({
         editEventModal: false, editEventData: { id: '',event_title: '', event_description: '', image_url: '', event_date: '', event_time: '', attendees: '', budget: '', user_id: '', completed: '' }
